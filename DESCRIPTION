@@ -1,12 +1,21 @@
 Package: wfutemplates
-Title: What the Package Does (One Line, Title Case)
+Title: Creation of templates for WFU
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Michael",
+           family = "DeWitt",
            role = c("aut", "cre"),
-           email = "first.last@example.com")
-Description: What the package does (one paragraph).
-License: What license it uses
+           email = "dewittme@wfu.edu",
+           comment = c(ORCID = "0000-0001-8940-1967"))
+Maintainer: Michael DeWitt <dewittme@wfu.edu>
+Description: This package allows for users to utilise templates consistent with WFU Brand guidelines
+License: MIT + file LICENSE
+Depends:
+  R (>= 3.0)
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    knitr,
+    kableExtra,
+    rmarkdown
+RoxygenNote: 6.1.0

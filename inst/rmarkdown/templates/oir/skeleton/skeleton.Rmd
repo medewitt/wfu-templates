@@ -1,0 +1,45 @@
+---
+title: "Report Name"
+short_title: "Short Report Name"
+author: Michael E DeWitt Jr
+date: "`r Sys.Date()`"
+output:
+  wfutemplates::oir:
+    company:
+      name: Wake Forest Office of Institutional Research
+      address: P.O. Box 7373, Winston-Salem, NC 27109-7373
+      phone: 336-758-5160
+      email: dewittme@wfu.edu
+    logo: "WFU_Univ_H_black.jpg"
+    logo_height: 2cm
+    libertine: true
+    fancy_captions: FALSE
+    number_sections: TRUE
+    fig_cap: yes
+    keep_tex: true
+---
+
+```{r setup}
+library(knitr)
+library(kableExtra)
+library(ggplot2)
+opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE)
+```
+
+# Section 1
+Here is a table
+
+```{r}
+kable(mtcars[1:5, 1:5], booktabs = T, caption = "a table") %>%
+  kable_styling(latex_options = c("striped", "HOLD_position"), position = "left")
+```
+
+\clearpage
+
+# Section 2
+Here is a plot.
+
+```{r}
+ggplot(mtcars, aes(x = mpg, y = wt)) +
+  geom_point()
+```

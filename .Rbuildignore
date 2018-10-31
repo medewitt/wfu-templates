@@ -1,2 +1,5 @@
+^CODE_OF_CONDUCT\.md$
+^LICENSE\.md$
+^README\.Rmd$
 ^wfutemplates\.Rproj$
 ^\.Rproj\.user$
