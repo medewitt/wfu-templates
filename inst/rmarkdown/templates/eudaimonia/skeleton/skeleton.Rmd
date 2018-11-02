@@ -14,7 +14,12 @@ output:
     logo_height: 2cm
     libertine: true
     fancy_captions: FALSE
+    watermark: Working Paper
+    watermark_color: gray
     number_sections: TRUE
+    toc: false
+    lot: false
+    lof: false
     fig_cap: yes
     keep_tex: true
 ---
