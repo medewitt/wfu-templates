@@ -9,15 +9,15 @@ identity. This package is largely inspired by the `memor`
 [package](https://github.com/hebrewseniorlife/memor) with slowly
 evolving tweaks.
 
-This package has a lot of the Wake Forest University Logos.
+This package has a lot of the **Wake Forest University** logos.
 
 ## Installation
 
 You can install the released version of wfutemplates from
-[CRAN](https://CRAN.R-project.org) with:
+[github](https://github.com) with:
 
 ``` r
-install.packages("wfutemplates")
+devtools::install_github("medewitt/wfutemplates")
 ```
 
 # Contributing
