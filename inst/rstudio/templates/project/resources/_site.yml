@@ -1,0 +1,41 @@
+name: "Introduction to R"
+output_dir: "docs"
+navbar:
+  title: "Data Analysis in R"
+  right:
+  - text: "Syllabus"
+    icon: fa-handshake
+    href: syllabus.html
+  - text: "Lectures"
+    icon: fa-book
+    href: lectures.html
+  - text: "Exercises"
+    icon: fa-paper-plane
+    href: exercises.html
+  - text: "Resources"
+    icon: fa-hand-paper
+    href: resources.html
+  - text: "Home"
+    icon: fa-folder
+    href: https://michaeldewittjr.com
+base_url: https://github.com/medewitt/introduction_to_r/
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    css: css/style.css
+    df_print: paged
+    toc: true
+    toc_float: yes
+    bibliography: library.bib
+    biblio-style: apalike
+    include:
+      after_body: footer.html
+      in_header: GA.html
+instructor: "Michael DeWitt"
+address1: "Office of Institutional Research"
+address2: "309 Reynolda Hall"
+address3: "Winston- Salem, NC, 27106"
+github: "medewitt"
+email: "dewittme.wfu.edu"
+GA: "UA-117944166-1"

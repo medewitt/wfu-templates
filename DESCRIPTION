@@ -17,5 +17,7 @@ LazyData: true
 Imports: 
     knitr,
     kableExtra,
-    rmarkdown
+    rmarkdown,
+    glue,
+    yaml
 RoxygenNote: 6.1.0
