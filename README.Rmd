@@ -12,6 +12,9 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
+
+[![Travis build status](https://travis-ci.org/medewitt/wfutemplates.svg?branch=master)](https://travis-ci.org/medewitt/wfutemplates)
+
 # wfutemplates
 
 The goal of `wfutemplates` is to codify some commonly used templates at WFU and make report generation easier while adhering to a common visual identity. This package is largely inspired by the `memor` [package](https://github.com/hebrewseniorlife/memor) with slowly evolving tweaks. 

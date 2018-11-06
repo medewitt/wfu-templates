@@ -1,6 +1,9 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+[![Travis build
+status](https://travis-ci.org/medewitt/wfutemplates.svg?branch=master)](https://travis-ci.org/medewitt/wfutemplates)
+
 # wfutemplates
 
 The goal of `wfutemplates` is to codify some commonly used templates at
