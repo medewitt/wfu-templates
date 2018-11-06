@@ -3,6 +3,7 @@
 
 [![Travis build
 status](https://travis-ci.org/medewitt/wfutemplates.svg?branch=master)](https://travis-ci.org/medewitt/wfutemplates)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 # wfutemplates
 
