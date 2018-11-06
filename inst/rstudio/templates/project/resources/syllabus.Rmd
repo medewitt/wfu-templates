@@ -1,0 +1,10 @@
+---
+title: "min"
+---
+
+```{r, child="_setup.Rmd"}
+```
+
+## Syllabus
+
+This is where you could put your syllabus.
