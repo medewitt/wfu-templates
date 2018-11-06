@@ -1,5 +1,5 @@
 Package: wfutemplates
-Title: Creation of templates for WFU
+Title: Creation of Templates for WFU
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Michael",
@@ -8,7 +8,9 @@ Authors@R:
            email = "dewittme@wfu.edu",
            comment = c(ORCID = "0000-0001-8940-1967"))
 Maintainer: Michael DeWitt <dewittme@wfu.edu>
-Description: This package allows for users to utilise templates consistent with WFU Brand guidelines
+Description: This package allows for users to utilise templates consistent 
+    with WFU Brand guidelines. Additionally, there is a template for a course 
+    website that can be used to build courses.
 License: MIT + file LICENSE
 Depends:
   R (>= 3.0)
@@ -19,5 +21,7 @@ Imports:
     kableExtra,
     rmarkdown,
     glue,
-    yaml
+    yaml,
+    xfun,
+    htmltools
 RoxygenNote: 6.1.0

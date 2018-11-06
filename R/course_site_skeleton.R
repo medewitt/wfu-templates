@@ -1,5 +1,7 @@
+#' @title course_site_skeleton
+#' @param path The path to be used to generate the templates
 #' @importFrom xfun read_utf8 in_dir sans_ext same_path write_utf8 with_ext
-
+#' @export
 course_site_skeleton <- function(path) {
 
   # ensure directory exists

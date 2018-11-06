@@ -59,18 +59,7 @@ See ?rmarkdown::pdf_document for details}
 
 \item{...}{other options to be passed to rmarkdown::pdf_document. See
 ?rmarkdown::pdf_document for details}
-
-\item{use_profile}{T/F value for whether the user profile in
-`~/memor-profile.yaml` will be loaded. Default is `TRUE`.}
 }
 \description{
-Memor PDF Memo Template
-}
-\examples{
-\dontrun{
-library(rmarkdown)
- example <- system.file("example/demo.Rmd", package = "memor")
- render(example, memor::pdf_memo())
-}
-
+This function is used to compile the OIR document template
 }

@@ -1,7 +1,5 @@
 #' Memor PDF Memo Template
-#'
-#' @param use_profile T/F value for whether the user profile in
-#' `~/memor-profile.yaml` will be loaded. Default is `TRUE`.
+#' @description This function is used to compile the EI document template
 #' @param logo File path to Company logo file. The logo will be printed on
 #' the top right corner of the first page and the size will be adjusted to
 #' `logo_height`.
@@ -36,13 +34,6 @@
 #'
 #' @importFrom rmarkdown pdf_document pandoc_variable_arg
 #' @import knitr
-#'
-#' @examples
-#' \dontrun{
-#' library(rmarkdown)
-#'  example <- system.file("example/demo.Rmd", package = "memor")
-#'  render(example, memor::pdf_memo())
-#' }
 #'
 #' @export
 eudaimonia <- function(
