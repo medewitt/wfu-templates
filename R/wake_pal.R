@@ -3,7 +3,6 @@ wake_palette <- c("#9E7E38", "#000000","#82231C", "#511536",
                   "#3D3C1D", "#625750")
 #' Wake Forest Branded Color Pallete
 #' @examples
-#' library(scales)
 #' scales::show_col(wake_pal()(9))
 #' @export
 wake_pal <- function(){ scales::manual_pal(wake_palette)}
@@ -17,7 +16,7 @@ wake_pal <- function(){ scales::manual_pal(wake_palette)}
 #' @rdname scale_wake
 #' @export
 scale_colour_wake <- function(...) {
-  discrete_scale("colour", "wake", wake_pal(), ...) }
+  ggplot2::discrete_scale("colour", "wake", wake_pal(), ...) }
 
 #' @export
 #' @rdname scale_wake
@@ -26,4 +25,4 @@ scale_color_wake <- scale_colour_wake
 #' @export
 #' @rdname scale_wake
 scale_fill_wake <- function(...) {
-  discrete_scale("fill", "wake", wake_pal(), ...) }
+  ggplot2::discrete_scale("fill", "wake", wake_pal(), ...) }

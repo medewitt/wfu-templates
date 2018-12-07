@@ -25,5 +25,8 @@ Imports:
     xfun,
     htmltools,
     grid,
-    png
+    png,
+    scales,
+    ggplot2,
+    stringr
 RoxygenNote: 6.1.1

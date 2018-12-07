@@ -10,6 +10,5 @@ wake_pal()
 Wake Forest Branded Color Pallete
 }
 \examples{
-library(scales)
 scales::show_col(wake_pal()(9))
 }

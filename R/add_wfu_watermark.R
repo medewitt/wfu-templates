@@ -2,6 +2,7 @@
 #' @description This function adds the WFU logo as a watermark to any
 #'     ggplot2 graph
 #' @param alpha the opacity
+#' @importFrom grDevices rgb
 #' @export
 
 add_wfu_watermark <- function(alpha = .2){
@@ -13,10 +14,10 @@ add_wfu_watermark <- function(alpha = .2){
 
   m2[,,-4] <-m
 
-  w <- matrix(rgb(m2[,,1],m2[,,2],m2[,,3], m2[,,4]*alpha), nrow=dim(m)[1])
+  w <- matrix(grDevices::rgb(m2[,,1],m2[,,2],m2[,,3], m2[,,4]*alpha), nrow=dim(m)[1])
 
 
-  annotation_custom(xmin=-Inf, ymin=-Inf, xmax=Inf, ymax=Inf,
+  ggplot2::annotation_custom(xmin=-Inf, ymin=-Inf, xmax=Inf, ymax=Inf,
                     grid::rasterGrob(w))
 }
 
