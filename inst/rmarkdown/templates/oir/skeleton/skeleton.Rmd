@@ -14,14 +14,12 @@ output:
     logo_height: 2cm
     libertine: true
     fancy_captions: FALSE
-    number_sections: TRUE
     fig_cap: yes
     watermark_color: gray
-    number_sections: TRUE
+    number_sections: true
     toc: false
     lot: false
     lof: false
-    fig_cap: yes
     keep_tex: true
 ---
 
