@@ -17,10 +17,34 @@ evolving tweaks.
 
 This package has a lot of the **Wake Forest University** logos.
 
+Additionally, there are some WFU color pallettes that are now available
+to be used with `ggplot2`.
+
+``` r
+library(wfutemplates)
+library(ggplot2)
+ggplot(iris, aes(Sepal.Length,Sepal.Width, color = Species))+
+  geom_point()+
+  scale_color_wake()
+```
+
+<img src="man/figures/README-unnamed-chunk-1-1.png" width="100%" />
+
+You can also add a watermark.
+
+``` r
+ggplot(iris, aes(Sepal.Length,Sepal.Width, color = Species))+
+  geom_point()+
+  scale_color_wake()+
+  add_wfu_watermark()
+```
+
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+
 ## Course Website Template
 
 Additionally, this package also has a project template that builds the
-scaffolfing for a course website. The theme is inspired by [Steve V.
+scaffolfing for a course website. The theme is inspired by [Steven V.
 Miller](http://svmiller.com/) and modified to fit the Wake Forest colour
 scheme. An early implementation of this project template can be seen
 [here](https://michaeldewittjr.com/introduction_to_r/index.html). To get
