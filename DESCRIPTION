@@ -23,5 +23,7 @@ Imports:
     glue,
     yaml,
     xfun,
-    htmltools
+    htmltools,
+    grid,
+    png
 RoxygenNote: 6.1.1
