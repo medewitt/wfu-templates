@@ -4,7 +4,10 @@
 \alias{add_wfu_watermark}
 \title{add_wfu_watermark}
 \usage{
-add_wfu_watermark()
+add_wfu_watermark(alpha = 0.2)
+}
+\arguments{
+\item{alpha}{the opacity}
 }
 \description{
 This function adds the WFU logo as a watermark to any
