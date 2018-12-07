@@ -1,6 +1,6 @@
 # Course Template
 
-The purpose of this template is to define an easy way to build a course website in Rmarkdown building the functionality of R Studio to build static websites. This is not perfect, but it provides a nice template for further customisation as desired.
+The purpose of this template is to define an easy way to build a course website in Rmarkdown building the functionality of R Studio to build static websites. This is not perfect, but it provides a nice template for further customisation as desired. This template is inspired by [Steve V Miller](svmiller.com).
 
 # Starting
 
