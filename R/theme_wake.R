@@ -12,7 +12,7 @@ theme_wake <- function(){
   )
 }
 
-#' @examples
+#' @example
 #'  ggplot(iris, aes(Sepal.Length,Sepal.Width, color = Species))+
 #'  geom_point()+
 #'  theme_wake()+

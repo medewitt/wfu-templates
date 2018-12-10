@@ -18,7 +18,7 @@ theme_pres_wake <- function(){
         )
 }
 
-#' @examples
+#' @example
 #'  ggplot(iris, aes(Sepal.Length,Sepal.Width, color = Species))+
 #'  geom_point()+
 #'  theme_pres_wake()+
