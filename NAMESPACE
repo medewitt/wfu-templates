@@ -3,6 +3,7 @@
 export(add_wfu_watermark)
 export(course_site_skeleton)
 export(eudaimonia)
+export(iqss)
 export(make_formatted_title)
 export(oir)
 export(scale_color_wake)
