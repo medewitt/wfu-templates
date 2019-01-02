@@ -7,6 +7,11 @@ biblio-style: apalike
 ```{r, child="_setup.Rmd"}
 ```
 
+```{r echo = FALSE, results='asis'}
+build_toc("lectures.Rmd")
+```
+
+
 ## Introduction to R
 
 ### tldr:

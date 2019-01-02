@@ -15,3 +15,19 @@ grades <- tribble(
 )
 ```
 
+
+```{block,type="warning"}
+Warning!
+```
+
+```{block,type="note"}
+note!
+```
+
+```{block,type="tip"}
+tip!
+```
+
+```{block2, type = "rmdcaution"}
+You cannot use the contents of a package until you load the package in your current R session. 
+```

@@ -25,7 +25,7 @@ make_doc_links <-function(document_name, video_link = TRUE){
 <br>
 <hr style="border-top: dotted 2px #9E7E38;" />')
   }
-  
+
 }
 
 
@@ -59,28 +59,28 @@ make_website_footer <-function(yml = "_site.yml"){
   glue::glue('
     <br>
       <hr>
-      
+
       <div class="column-left">
       <p>
       <b>{site_name}</b><br>
       <a href="mailto:{yml[["email"]]}">{yml[["email"]]}</a> <br>
       </p>
       </div>
-      
+
       <div class="column-center">
       <p>
       {yml[["address1"]]} <br>
       {yml[["address2"]]} <br>
       {yml[["address3"]]}<br>
       </p>
-      
+
       </div>
-      
+
       <div class="column-right">
       Michael DeWitt <br>
       <a href="https://github.com/{yml[["github"]]}"><i class="fa fa-github"></i></a>
       </div>
-      
+
       <br>
       <br>
       <center>
@@ -115,12 +115,12 @@ make_google_analytics <-function(yaml = "_site.yml"){
     GA <- yml[["GA"]]
     a <- glue::glue('<!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={GA}"></script>')
-    
+
     b <- sprintf("<script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      
+
       gtag('config', '%s');
       </script>", GA)
   }
@@ -128,3 +128,19 @@ make_google_analytics <-function(yaml = "_site.yml"){
 }
 
 make_google_analytics(yaml = "_site.yml")
+
+
+# make table of contents --------------------------------------------------
+
+build_toc <- function(filename) {
+  text <- read_file(filename)
+  recipes <- text %>%
+    stringr::str_extract_all("\\n##\\s.+\\n") %>%
+    pluck(1) %>%
+    `[`(-1) %>%
+    stringr::str_replace_all("\\s\\{.*\\}", "") %>%
+    stringr::str_replace_all("\\n##\\s", "1. [") %>%
+    stringr::str_replace_all("\\n", "]")
+  headers <- paste(recipes, collapse = "\n")
+  cat("<div class='col2'>\n", headers, "\n</div>")
+}
