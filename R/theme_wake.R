@@ -4,11 +4,11 @@
 #' @export
 
 theme_wake <- function(){
-  theme(panel.background = element_blank(),
-        plot.title = element_text(family = "Times"),
-        panel.grid = element_blank(),
-        legend.background = element_rect(fill="transparent", colour=NA),
-        legend.key = element_rect(fill="transparent", colour=NA),
+  ggplot2::theme(panel.background = ggplot2::element_blank(),
+        plot.title = ggplot2::element_text(family = "Times"),
+        panel.grid = ggplot2::element_blank(),
+        legend.background = ggplot2::element_rect(fill="transparent", colour=NA),
+        legend.key = ggplot2::element_rect(fill="transparent", colour=NA),
   )
 }
 

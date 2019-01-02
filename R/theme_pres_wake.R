@@ -4,17 +4,17 @@
 #' @export
 
 theme_pres_wake <- function(){
-  theme(panel.background = element_blank(),
-        plot.title = element_text(size = 24, family = "Times"),
-        plot.subtitle = element_text(size = 18),
-        plot.caption = element_text(size = 16),
-        panel.grid = element_blank(),
-        axis.title = element_text(size = 18),
-        axis.text = element_text(size = 16),
-        legend.background = element_rect(fill="transparent", colour=NA),
-        legend.key = element_rect(fill="transparent", colour=NA),
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12)
+  ggplot2::theme(panel.background = ggplot2::element_blank(),
+        plot.title = ggplot2::element_text(size = 24, family = "Times"),
+        plot.subtitle = ggplot2::element_text(size = 18),
+        plot.caption = ggplot2::element_text(size = 16),
+        panel.grid = ggplot2::element_blank(),
+        axis.title = ggplot2::element_text(size = 18),
+        axis.text = ggplot2::element_text(size = 16),
+        legend.background = ggplot2::element_rect(fill="transparent", colour=NA),
+        legend.key = ggplot2::element_rect(fill="transparent", colour=NA),
+        legend.title = ggplot2::element_text(size = 14),
+        legend.text = ggplot2::element_text(size = 12)
         )
 }
 
