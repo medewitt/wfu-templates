@@ -97,7 +97,7 @@ oir <- function(
 
   template <- system.file("rmarkdown/templates/oir/resources/oir.tex",
                           package = "wfutemplates")
-  config <- rmarkdown::pdf_document(
+  config <- bookdown::pdf_document2(
     latex_engine = latex_engine,
     template = template,
     number_sections = number_sections,
