@@ -144,3 +144,10 @@ build_toc <- function(filename) {
   headers <- paste(recipes, collapse = "\n")
   cat("<div class='col2'>\n", headers, "\n</div>")
 }
+
+
+# add disclaimer ----------------------------------------------------------
+
+add_disclaimer <- function(name){
+  sprintf("This website was prepared or accomplished by %s in his personal capacity. The views, thoughts, and opinions expressed in this website are the author's own and not necessarily to the author’s employer, organization, committee or other group or individual.", name)
+}
